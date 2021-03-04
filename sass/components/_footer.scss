@@ -47,9 +47,12 @@
 
 .footer-contacts__address {
   width: 232px;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 9px;
   font-style: normal;
   line-height: 1.71;
+  text-align: center;
   letter-spacing: 0.03em;
 
   color: var(--text-white-color);
