@@ -4,18 +4,28 @@
   font-family: var(--text-logo-font);
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.193;
+  font-size: 24px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.193;
+  }
 
   & > .logo__decor {
     color: var(--accent-color-blue);
   }
 
   &.header-logo {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     color: var(--color-head-link-title);
+
+    @media screen and (min-width: 768px) {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
   }
 
   &.footer-logo {

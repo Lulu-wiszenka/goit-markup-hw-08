@@ -28,36 +28,21 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
-  &.services {
-    padding-top: 0;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   &.team {
     background-color: var(--background-grey-color);
   }
-}
 
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
 
-.title {
-  margin-bottom: 50px;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.167;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--color-head-link-title);
+    &.services {
+      padding-top: 0;
+    }
+  }
 }
 
 .thumb {

@@ -1,19 +1,28 @@
 /* ============ PORFOLIO ============ */
 
-.portfolio {
-  padding-top: 90px;
-  padding-bottom: 90px;
-}
 /* ============ BUTTON-NAVIGATION ============ */
-
+//ul
 .portfolio-nav {
-  @include flex($jc: center, $ai: stretch);
-  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
+//li
 .portfolio-nav__item {
   &:not(:last-child) {
     margin-right: 8px;
+  }
+  @media screen and (max-width: 767px) {
+    &:nth-child(-n + 3) {
+      margin-bottom: 15px;
+    }
   }
 }
 
@@ -47,26 +56,41 @@
 /* ============ WORK EXAMPLES ============ */
 
 .work-list {
-  margin-right: calc(-1 * var(--card-set-gap));
-  margin-bottom: calc(-1 * var(--card-set-gap));
-  display: flex;
-  flex-wrap: wrap;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .work-list__item {
-  flex-basis: calc(100% / 3 - var(--card-set-gap));
-  margin-right: var(--card-set-gap);
-  margin-bottom: var(--card-set-gap);
+  text-align: start;
+  max-width: 450px;
   border: 1px solid var(--work-examples-border);
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 3);
+  }
 }
 
 .work-examples-card {
   display: block;
   width: 100%;
-  height: 404px;
+  min-height: 404px;
 
   @include transition(box-shadow);
-  // transition: box-shadow 250ms var(--hover-cubic);
 
   & > .thumb {
     overflow: hidden;
@@ -93,7 +117,6 @@
   color: var(--text-white-color);
 
   @include transition(transform);
-  // transition: transform 250ms var(--hover-cubic);
 
   .work-examples-card:hover &,
   .work-examples-card:focus & {

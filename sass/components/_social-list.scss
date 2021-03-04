@@ -15,9 +15,6 @@
 
 .social__link {
   @include flex($jc: center);
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
 
   color: var(--text-white-color);
   width: 100%;
@@ -25,7 +22,6 @@
   border-radius: 50%;
 
   @include transition(background-color);
-  // transition: background-color 250ms var(--hover-cubic);
 
   &.footer-social {
     background-color: var(--footer-social-link-color);
@@ -43,7 +39,6 @@
   fill: var(--icon-social-color);
 
   @include transition(fill);
-  // transition: fill 250ms var(--hover-cubic);
 
   .social__link:hover &,
   .social__link:focus & {
