@@ -26,6 +26,11 @@
   &.footer-form__btn {
     @include flex($jc: center);
     padding: 8px 26px 8px 26px;
+
+    @media screen and (max-width: 1199px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &:hover,

@@ -1,10 +1,9 @@
 /* ============ HERO ============ */
 
 .hero {
-  margin: 0 auto;
   max-width: 1600px;
-  width: 100vh;
   height: 400px;
+  margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
 
@@ -47,7 +46,7 @@
   }
 }
 
-.hero-title {
+.hero__title {
   max-width: 360px;
   margin-right: auto;
   margin-left: auto;
