@@ -11,7 +11,7 @@
 .advantages-list__item {
   @media screen and (max-width: 767px) {
     max-width: 450px;
-    flex-basis: 100%;
+    width: 100%;
 
     &:not(:last-child) {
       margin-bottom: 30px;
@@ -19,12 +19,12 @@
   }
 
   @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 60px) / 2);
+    width: calc((100% - 60px) / 2);
     margin: 15px;
   }
 
   @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 120px) / 4);
+    width: calc((100% - 120px) / 4);
   }
 }
 

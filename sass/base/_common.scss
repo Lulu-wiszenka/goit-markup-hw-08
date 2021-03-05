@@ -28,14 +28,9 @@ img {
 }
 
 .section {
-  max-width: 1600px;
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
-
-  &.team {
-    background-color: var(--background-grey-color);
-  }
 
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
@@ -44,6 +39,10 @@ img {
     &.services {
       padding-top: 0;
     }
+  }
+
+  &.team {
+    background-color: var(--background-grey-color);
   }
 }
 
