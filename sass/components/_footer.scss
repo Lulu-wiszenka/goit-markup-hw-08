@@ -7,7 +7,9 @@
 }
 
 .footer > .container {
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -20,48 +22,47 @@
 
 .footer .contacts-box {
   width: 100%;
+  margin-bottom: 60px;
 
   @media screen and (min-width: 768px) {
     width: 50%;
-    margin-bottom: 60px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 231px;
     margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 
 .footer .social-box {
   width: 100%;
-
+  margin-bottom: 60px;
   @media screen and (min-width: 768px) {
     width: 50%;
-    margin-bottom: 60px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 206px;
     margin-right: 93px;
+    margin-bottom: 0;
   }
 }
 
 .footer .form-box {
   width: 100%;
   @media screen and (min-width: 1200px) {
+    text-align: start;
     width: 570px;
     margin-left: auto;
   }
 }
 
 .footer-contacts__address {
-  width: 232px;
-  margin-right: auto;
-  margin-left: auto;
   margin-bottom: 9px;
   font-style: normal;
   line-height: 1.71;
-  text-align: center;
+
   letter-spacing: 0.03em;
 
   color: var(--text-white-color);
