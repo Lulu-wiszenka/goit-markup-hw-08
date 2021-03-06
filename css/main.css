@@ -438,7 +438,7 @@ img {
   .contacts__link--tel {
     padding-top: 32px;
     padding-bottom: 31px;
-    font-style: 14px;
+    font-size: 14px;
     line-height: 1.143;
   }
 }
@@ -491,7 +491,7 @@ img {
 }
 
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 50%;
   z-index: 77;
@@ -570,7 +570,7 @@ img {
 
 .mobile-contacts__link--tel {
   font-weight: 500;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 1.167;
   letter-spacing: 0.02em;
   color: var(--accent-color-blue);
@@ -585,18 +585,29 @@ img {
 
 .mobile-contacts__link--mail {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.167;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
 
-.mobile-social-list {
-  display: flex;
+@media screen and (min-width: 400px) {
+  .mobile-contacts__link--mail {
+    font-size: 24px;
+    line-height: 1.167;
+  }
 }
 
-.mobile-social-list__item:not(:first-child) {
-  margin-left: 10px;
+.mobile-social-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.mobile-social-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mobile-social-link {
@@ -607,17 +618,26 @@ img {
   color: var(--accent-color-blue);
 }
 
-.mobile-social-link:not(:last-child) {
-  display: inline-flex;
+@media screen and (min-width: 460px) {
+  .mobile-social-link {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
 
-.mobile-social-link:not(:last-child)::after {
-  content: "";
-  display: inline-block;
-  margin-right: 10px;
-  height: 22px;
-  min-width: 2px;
-  background-color: #000;
+.stick {
+  display: block;
+  background-color: rgba(33, 33, 33, 0.2);
+  width: 18px;
+  height: 1.5px;
+  transform: rotate(90deg);
+}
+
+@media screen and (min-width: 460px) {
+  .stick {
+    width: 22px;
+    height: 2px;
+  }
 }
 
 /* ============ HERO ============ */
@@ -1682,7 +1702,7 @@ img {
   .contacts__link--tel {
     padding-top: 32px;
     padding-bottom: 31px;
-    font-style: 14px;
+    font-size: 14px;
     line-height: 1.143;
   }
 }
@@ -1735,7 +1755,7 @@ img {
 }
 
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 50%;
   z-index: 77;
@@ -1814,7 +1834,7 @@ img {
 
 .mobile-contacts__link--tel {
   font-weight: 500;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 1.167;
   letter-spacing: 0.02em;
   color: var(--accent-color-blue);
@@ -1829,18 +1849,29 @@ img {
 
 .mobile-contacts__link--mail {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.167;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
 
-.mobile-social-list {
-  display: flex;
+@media screen and (min-width: 400px) {
+  .mobile-contacts__link--mail {
+    font-size: 24px;
+    line-height: 1.167;
+  }
 }
 
-.mobile-social-list__item:not(:first-child) {
-  margin-left: 10px;
+.mobile-social-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.mobile-social-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mobile-social-link {
@@ -1851,17 +1882,26 @@ img {
   color: var(--accent-color-blue);
 }
 
-.mobile-social-link:not(:last-child) {
-  display: inline-flex;
+@media screen and (min-width: 460px) {
+  .mobile-social-link {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
 
-.mobile-social-link:not(:last-child)::after {
-  content: "";
-  display: inline-block;
-  margin-right: 10px;
-  height: 22px;
-  min-width: 2px;
-  background-color: #000;
+.stick {
+  display: block;
+  background-color: rgba(33, 33, 33, 0.2);
+  width: 18px;
+  height: 1.5px;
+  transform: rotate(90deg);
+}
+
+@media screen and (min-width: 460px) {
+  .stick {
+    width: 22px;
+    height: 2px;
+  }
 }
 
 /* ============ PORFOLIO ============ */
