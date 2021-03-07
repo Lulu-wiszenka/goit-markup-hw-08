@@ -4,9 +4,13 @@
   left: 50%;
   z-index: 77;
   width: 100%;
-  max-width: 480px;
+  max-width: 767px;
   height: 100vh;
   max-height: 796px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   transform: translateX(-50%) translateY(-100%);
   overflow: scroll;
@@ -23,6 +27,7 @@
   position: fixed;
   top: 10px;
   right: 15px;
+  z-index: 80;
 
   width: 40px;
   height: 40px;
@@ -44,10 +49,6 @@
   .mobile-menu-close:focus > & {
     fill: var(--accent-color-blue);
   }
-}
-
-.mobile-nav-list {
-  margin-bottom: 302px;
 }
 
 .mobile-nav-link {
